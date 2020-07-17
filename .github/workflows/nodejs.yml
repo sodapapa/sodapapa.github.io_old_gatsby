@@ -13,7 +13,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    
     strategy:
       matrix:
         node-version: [10.x, 12.x]
@@ -29,4 +29,4 @@ jobs:
     - run: yarn run lint
     - run: yarn run test --runInBand --no-cache
       env:
-        CI: true
+        CI: false
